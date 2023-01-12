@@ -36,7 +36,7 @@ import { ProjetoModule } from './projeto/projeto.module';
     }),
     ProjetoModule,
     GrupoModule,
-    TurmaModule,    
+    TurmaModule 
     
   ],
 
