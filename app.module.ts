@@ -2,11 +2,12 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { Grupo } from './grupo/entities/grupo.entity';
-import { ProjetoModule } from './projeto/projeto.module';
 import { Projeto } from './projeto/entities/projeto.entity';
 import { Turma } from './turma/entities/turma.entity';
 import { GrupoModule } from './grupo/grupo.module';
 import { TurmaModule } from './turma/turma.module';
+import { ProjetoModule } from './projeto/projeto.module';
+
 
 
 @Module({
