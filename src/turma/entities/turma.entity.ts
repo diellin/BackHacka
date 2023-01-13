@@ -13,14 +13,14 @@ export class Turma {
 
     @IsNotEmpty()
     @MaxLength(250)
-    @Column({ length: 250, nullable: false})
+    @Column({ length: 1000, nullable: false})
     @ApiProperty()
     descricao: string;
     
-    @MaxLength(10)
-    @Column({ length: 10, nullable: false})
+    @IsNotEmpty()
+    @Column({ default: true})
     @ApiProperty()
-    isAtivo: string;
+    isAtivo: boolean;
 
     
     @ApiProperty({type: () => Grupo})
