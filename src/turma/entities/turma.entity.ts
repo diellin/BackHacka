@@ -27,6 +27,6 @@ export class Turma {
     @OneToMany(() => Grupo, (grupo) => grupo.turma)
     grupo: Grupo[]
 
-
+ 
  
 } 
