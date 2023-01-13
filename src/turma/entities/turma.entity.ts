@@ -12,7 +12,7 @@ export class Turma {
     id: number
 
     @IsNotEmpty()
-    @MaxLength(250)
+    @MaxLength(1000)
     @Column({ length: 1000, nullable: false})
     @ApiProperty()
     descricao: string;
