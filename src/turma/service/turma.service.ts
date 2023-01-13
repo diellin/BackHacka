@@ -15,6 +15,7 @@ export class TurmaService {
         return await this.turmaRepository.find({
             relations: {
                 grupo: true
+            
             }
 
         })
