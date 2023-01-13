@@ -16,11 +16,11 @@ export class Turma {
     @Column({ length: 250, nullable: false})
     @ApiProperty()
     descricao: string;
-
-    @IsBoolean() 
-    @Column()
+    
+    @MaxLength(10)
+    @Column({ length: 10, nullable: false})
     @ApiProperty()
-    isAtivo: boolean;
+    isAtivo: string;
 
     
     @ApiProperty({type: () => Grupo})
